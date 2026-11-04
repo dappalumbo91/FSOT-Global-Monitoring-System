@@ -1,0 +1,9 @@
+FSOT-Global-Monitoring-System
+Copyright 2026 Damian Arthur Palumbo
+
+This product is part of the FSOT project family by Damian Arthur Palumbo
+and is licensed under the Apache License, Version 2.0 (see LICENSE).
+Theory authority: https://github.com/dappalumbo91/FSOT-2.1-Lean (pin AEB2AD).
+
+Third-party Rust crates listed in Cargo.toml / Cargo.lock are not bundled
+and remain under their own licenses.
