@@ -1,5 +1,7 @@
 # FSOT Global Monitoring System
 
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 An interactive Earth that reads public measurements, and a separate FSOT track that writes a forecast before the window and scores it against the later measurement.
 
 This repository is in testing. The globe is the measuring instrument. FSOT is not drawn on the globe yet. The score lives in [`FSOT/stamps/STATUS.md`](FSOT/stamps/STATUS.md).
