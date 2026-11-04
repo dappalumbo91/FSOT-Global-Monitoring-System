@@ -1,0 +1,7 @@
+/target/
+/cache/
+**/__pycache__/
+*.pyc
+*.pdb
+shots/desk.txt
+FSOT/stamps/loop.log

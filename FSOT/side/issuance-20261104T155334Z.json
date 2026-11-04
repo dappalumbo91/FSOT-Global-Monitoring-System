@@ -1,0 +1,117 @@
+{
+  "issued_at": "2026-11-04T15:53:34Z",
+  "pin_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "engine": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_earth_fluid_forecast.py",
+  "confirmed_held_out": 0,
+  "counts_when": "scored only against a measurement whose time is after issued_at",
+  "quake_catalog": null,
+  "weather": [
+    {
+      "id": "FCAST-WX-20261104T1553-03",
+      "kind": "weather",
+      "issued_at": "2026-11-04T15:53:34+00:00",
+      "valid_from": "2026-11-04T15:53:34+00:00",
+      "valid_to": "2026-11-05T15:53:34+00:00",
+      "location": {
+        "name": "NDBC 40,-180 (pacific)",
+        "lat": 40.03515,
+        "lon": -179.99998,
+        "radius_km": 50.0,
+        "buoy_id": "40,-180",
+        "basin": "pacific"
+      },
+      "predicted": {
+        "class": "storm_sector",
+        "pres_max_hpa": 1010.0,
+        "gst_min_ms": 8.0,
+        "valve_state": "loading_suction",
+        "pres_now": 1011.9,
+        "gst_now": 15.07,
+        "basin": "pacific",
+        "fold_score_d": 1.2783,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 50.0,
+        "orifice_valve_km": 977.8,
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "earthquake",
+          "volcanic",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "potentials": [
+          {
+            "id": "cell_poof",
+            "fold_d": 1.0,
+            "weight": 0.087061,
+            "means": "POOF in the scored region (the public kill object)."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.423668,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07114312,
+                "weight": 0.204202
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05804172,
+                "weight": 0.166597
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05616918,
+                "weight": 0.161222
+              },
+              {
+                "kind": "earthquake",
+                "kappa": 0.05319815,
+                "weight": 0.152694
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05045501,
+                "weight": 0.144821
+              }
+            ],
+            "means": "Same load, other tank. Isolated 39 km scoring misses this branch."
+          },
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "SUCTION holds. Honest miss if the cell stays quiet and no cycle POOF."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.28 (50.0 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "NDBC 40,-180 next 24h: pressure stays \u22651010 hPa AND gust <8 m/s",
+      "score_query": {
+        "buoy_id": "40,-180",
+        "storm": true
+      },
+      "agency_look_ahead": {
+        "hours_in_window": 23,
+        "min_pressure_hpa": 1012.2,
+        "max_wind_ms": 17.57,
+        "precip_mm_sum": 6.4,
+        "source": "open-meteo wind-hours",
+        "role": "agency hourly forecast stored beside this cell; not a score"
+      },
+      "input_note": "pres_now is Open-Meteo sea-level pressure. gst_now is Open-Meteo 10 m wind speed in m/s. The NDBC name is the function label."
+    }
+  ],
+  "solar": [],
+  "earthquakes": [],
+  "volcanic": [],
+  "horizon": {
+    "weather_hours": 24,
+    "earthquake_days": 7,
+    "kernel_km": 39.11340764370184,
+    "solar_hours": 72
+  }
+}

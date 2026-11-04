@@ -1,0 +1,118 @@
+{
+  "issued_at": "2026-11-03T17:35:46Z",
+  "pin_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "engine": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_earth_fluid_forecast.py",
+  "confirmed_held_out": 0,
+  "counts_when": "scored only against a measurement whose time is after issued_at",
+  "weather": [],
+  "solar": [],
+  "earthquakes": [
+    {
+      "id": "FCAST-EQ-20261103T1735-02",
+      "kind": "earthquake",
+      "issued_at": "2026-11-03T17:35:46+00:00",
+      "valid_from": "2026-11-03T17:35:46+00:00",
+      "valid_to": "2026-11-10T17:35:46+00:00",
+      "location": {
+        "name": "52 km WNW of Ninilchik, Alaska",
+        "lat": 60.2132,
+        "lon": -152.7712,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 4.5,
+        "min_count": 1,
+        "expect_event": true,
+        "valve_state": "loading_suction",
+        "fsot_pressure": 0.2029,
+        "n_recent": 2,
+        "max_mag_recent": 2.700000047683716,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "cell_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "POOF in the scored region (the public kill object)."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Same load, other tank. Isolated 39 km scoring misses this branch."
+          },
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "SUCTION holds. Honest miss if the cell stays quiet and no cycle POOF."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "No USGS M\u22654.5 inside 39 km of (60.213,-152.771) between 2026-11-03 and 2026-11-10",
+      "score_query": {
+        "lat": 60.21320579732504,
+        "lon": -152.7712405136721,
+        "radius_km": 39.11340764370184,
+        "mag_min": 4.5,
+        "start": "2026-11-03",
+        "end": "2026-11-10"
+      }
+    }
+  ],
+  "volcanic": [],
+  "horizon": {
+    "weather_hours": 24,
+    "earthquake_days": 7,
+    "kernel_km": 39.11340764370184,
+    "solar_hours": 72
+  }
+}

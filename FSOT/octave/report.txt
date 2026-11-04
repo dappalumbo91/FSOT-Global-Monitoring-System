@@ -1,0 +1,45 @@
+FSOT Octave crunch
+Pin stays AEB2AD. These figures are diagnostics.
+
+Kp measured rows 64  2026-10-27T00:00:00Z through 2026-11-03T21:00:00Z
+Dst rows 168  2026-10-27T13:00:00Z through 2026-11-03T12:00:00Z
+IMF rows 53  2026-11-03T12:50:48Z through 2026-11-03T13:44:18Z
+Grid samples 9324  quake rows 48  open quake cells 4
+
+Kp rule
+A storm call needs the latest Kp >= 4, or a rise across 4 samples with latest Kp >= 3.
+Four Kp samples are 12 hours. The issued card scores 72 hours.
+First measured Kp >= 5 is 6.00 at 2026-10-31T18:00:00Z
+First storm call in that 72 hours: 2026-10-30T21:00:00Z at Kp 4.33, lead 21.0 hours.
+Quiet calls inside those 72 hours: 21. Storm calls: 3.
+Quiet calls in that window while Kp was still under 3: 18.
+
+Dst around the Kp >= 5 row
+Lowest Dst in the 48 hours before Kp >= 5: -37.0 nT at 2026-10-31T08:00:00Z.
+Samples <= -30 nT: 4. Samples <= -50 nT: 0.
+
+IMF Bz coverage
+IMF file runs 2026-11-03T12:50:48Z through 2026-11-03T13:44:18Z. Southward is Bz < 0.
+Southward samples 42 of 53. Most southward Bz -2.64 nT.
+
+Weather grid, one class per basin
+Snapshots 74 from 2026-11-03T06:28:20Z through 2026-11-03T12:52:39Z.
+Samples with 10 m wind in [14, 16) m/s: 353 of 9324.
+Samples with pressure in [995, 1005) hPa: 300 of 9324.
+Basin, snapshots with a storm point, snapshots whose winning storm point moved, quiet-winner moves
+arctic, 74, 0, 0
+southern, 74, 0, 0
+gulf, 0, 0, 0
+tropics, 0, 0, 10
+pacific, 39, 1, 7
+atlantic, 9, 0, 3
+
+Quake cells issued 2026-11-03T06:21:24Z
+Events in the FSOT archive at or before issuance stay inputs.
+Cell 34.45, 26.48 radius 39.1. Inputs inside radius 2. Later M>=4.5 1.
+  Largest later event M4.9 at 16.0 km, 2026-11-03T11:03:47Z.
+Cell 32.33, 93.77 radius 39.1. Inputs inside radius 2. Later M>=4.5 0.
+Cell 32.41, -115.17 radius 39.1. Inputs inside radius 4. Later M>=4.5 0.
+Cell 38.88, -122.62 radius 39.1. Inputs inside radius 3. Later M>=4.5 0.
+
+End.

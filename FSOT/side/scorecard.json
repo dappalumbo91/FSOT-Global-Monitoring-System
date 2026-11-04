@@ -1,0 +1,536 @@
+{
+  "issued_at": "2026-11-03T06:21:24Z",
+  "pin": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "closed_results": [
+    {
+      "forecast": 6.5,
+      "hour": "2026-11-02T18",
+      "k": "result",
+      "km": 0.0,
+      "later": 6.1,
+      "later_t": "2026-11-02T18",
+      "of": "rain",
+      "src": "open-meteo-hour",
+      "t": "2026-11-03T02:26:48Z",
+      "_file": "2026-11-03.jsonl"
+    }
+  ],
+  "closed_rain": {
+    "hour": "2026-11-02T18",
+    "forecast": 6.5,
+    "later": 6.1,
+    "abs_mm": 0.40000000000000036
+  },
+  "weather": {
+    "grid_rows": 126,
+    "usable": 126,
+    "storm_points": 21,
+    "quiet_points": 70,
+    "gap_points": 35,
+    "cards": [
+      {
+        "id": "FCAST-WX-20261103T0621-01",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC -60,-80 (southern)",
+          "lat": -60.0,
+          "lon": -79.97681,
+          "radius_km": 50.0,
+          "buoy_id": "-60,-80",
+          "basin": "southern"
+        },
+        "class": "storm_sector",
+        "valve_state": "loading_suction",
+        "kill_if": "NDBC -60,-80 next 24h: pressure stays \u22651010 hPa AND gust <8 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 963.6,
+          "wind_10m_in_gust_slot_ms": 14.66,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1010.0,
+          "gst_min_ms": 8.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 956.4,
+          "max_wind_ms": 18.79,
+          "precip_mm_sum": 4.1,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      },
+      {
+        "id": "FCAST-WX-20261103T0621-02",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC 60,-180 (arctic)",
+          "lat": 60.0,
+          "lon": -180.0,
+          "radius_km": 50.0,
+          "buoy_id": "60,-180",
+          "basin": "arctic"
+        },
+        "class": "storm_sector",
+        "valve_state": "loading_suction",
+        "kill_if": "NDBC 60,-180 next 24h: pressure stays \u22651010 hPa AND gust <8 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 977.2,
+          "wind_10m_in_gust_slot_ms": 12.15,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1010.0,
+          "gst_min_ms": 8.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 976.2,
+          "max_wind_ms": 12.71,
+          "precip_mm_sum": 2.7,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      },
+      {
+        "id": "FCAST-WX-20261103T0621-03",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC -40,120 (pacific)",
+          "lat": -39.96485,
+          "lon": 120.0419,
+          "radius_km": 50.0,
+          "buoy_id": "-40,120",
+          "basin": "pacific"
+        },
+        "class": "storm_sector",
+        "valve_state": "loading_suction",
+        "kill_if": "NDBC -40,120 next 24h: pressure stays \u22651010 hPa AND gust <8 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 1014.1,
+          "wind_10m_in_gust_slot_ms": 15.16,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1010.0,
+          "gst_min_ms": 8.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 1014.6,
+          "max_wind_ms": 15.98,
+          "precip_mm_sum": 0.1,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      },
+      {
+        "id": "FCAST-WX-20261103T0621-04",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC -40,-80 (atlantic)",
+          "lat": -39.96485,
+          "lon": -79.94412,
+          "radius_km": 50.0,
+          "buoy_id": "-40,-80",
+          "basin": "atlantic"
+        },
+        "class": "quiet_sector",
+        "valve_state": "steady",
+        "kill_if": "NDBC -40,-80 next 24h: pressure drops below 1005 hPa or gust \u226512 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 1010.8,
+          "wind_10m_in_gust_slot_ms": 7.43,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1035.0,
+          "gst_min_ms": 0.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 1010.7,
+          "max_wind_ms": 9.87,
+          "precip_mm_sum": 0.2,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      },
+      {
+        "id": "FCAST-WX-20261103T0621-05",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC 0,0 (tropics)",
+          "lat": 0.035149384,
+          "lon": 0.0,
+          "radius_km": 50.0,
+          "buoy_id": "0,0",
+          "basin": "tropics"
+        },
+        "class": "quiet_sector",
+        "valve_state": "steady",
+        "kill_if": "NDBC 0,0 next 24h: pressure drops below 1005 hPa or gust \u226512 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 1011.9,
+          "wind_10m_in_gust_slot_ms": 6.61,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1035.0,
+          "gst_min_ms": 0.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 1009.4,
+          "max_wind_ms": 6.95,
+          "precip_mm_sum": 4.3,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      },
+      {
+        "id": "FCAST-WX-20261103T0621-06",
+        "kind": "weather",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-04T06:21:24+00:00",
+        "location": {
+          "name": "NDBC 20,-80 (gulf)",
+          "lat": 19.999998,
+          "lon": -80.00998,
+          "radius_km": 50.0,
+          "buoy_id": "20,-80",
+          "basin": "gulf"
+        },
+        "class": "quiet_sector",
+        "valve_state": "steady",
+        "kill_if": "NDBC 20,-80 next 24h: pressure drops below 1005 hPa or gust \u226512 m/s",
+        "measured_inputs": {
+          "pres_now_hpa": 1012.2,
+          "wind_10m_in_gust_slot_ms": 5.79,
+          "kp_now": null,
+          "max_mag_recent": null,
+          "n_recent": null
+        },
+        "prediction": {
+          "pres_max_hpa": 1035.0,
+          "gst_min_ms": 0.0,
+          "expect_kp_ge_5": null,
+          "expect_event": null,
+          "mag_min": null,
+          "min_count": null,
+          "fsot_pressure": null
+        },
+        "agency_look_ahead": {
+          "hours_in_window": 23,
+          "min_pressure_hpa": 1011.2,
+          "max_wind_ms": 8.09,
+          "precip_mm_sum": 11.4,
+          "source": "open-meteo wind-hours",
+          "role": "agency hourly forecast stored beside this cell; not a score"
+        }
+      }
+    ]
+  },
+  "solar": {
+    "measured_rows": 59,
+    "kp_now": 1.33,
+    "kp_now_t": "2026-11-03T06:00:00Z",
+    "null_kp": 0,
+    "predicted_ahead_rows": 17,
+    "predicted_behind": 0,
+    "agency_peak_kp": 3.67,
+    "agency_peak_t": "2026-11-05T06:00:00Z",
+    "card": {
+      "id": "FCAST-SOL-20261103T0621-01",
+      "kind": "solar",
+      "issued_at": "2026-11-03T06:21:24+00:00",
+      "valid_from": "2026-11-03T06:21:24+00:00",
+      "valid_to": "2026-11-06T06:21:24+00:00",
+      "location": {
+        "name": "Earth magnetosphere (planetary Kp)",
+        "lat": 0.0,
+        "lon": 0.0,
+        "radius_km": 6371.0
+      },
+      "class": "quiet_sector",
+      "valve_state": "loading_suction",
+      "kill_if": "NOAA SWPC planetary Kp does reach 5 or above in the next 72 hours",
+      "measured_inputs": {
+        "pres_now_hpa": null,
+        "wind_10m_in_gust_slot_ms": null,
+        "kp_now": 1.33,
+        "max_mag_recent": null,
+        "n_recent": null
+      },
+      "prediction": {
+        "pres_max_hpa": null,
+        "gst_min_ms": null,
+        "expect_kp_ge_5": false,
+        "expect_event": null,
+        "mag_min": null,
+        "min_count": null,
+        "fsot_pressure": null
+      }
+    }
+  },
+  "quakes": {
+    "used": 41,
+    "skipped": 0,
+    "first_t": "2026-11-02T06:52:59Z",
+    "last_t": "2026-11-03T04:04:13Z",
+    "horizon_days": 7,
+    "kernel_km": 39.11340764370184,
+    "cards": [
+      {
+        "id": "FCAST-EQ-20261103T0621-01",
+        "kind": "earthquake",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-10T06:21:24+00:00",
+        "location": {
+          "name": "81 km SSE of Palekastro, Greece",
+          "lat": 34.4491,
+          "lon": 26.4812,
+          "radius_km": 39.1
+        },
+        "class": "M_ge_threshold_in_window",
+        "valve_state": "loading_suction",
+        "kill_if": "No USGS M\u22654.5 inside 39 km of (34.449,26.481) between 2026-11-03 and 2026-11-10",
+        "measured_inputs": {
+          "pres_now_hpa": null,
+          "wind_10m_in_gust_slot_ms": null,
+          "kp_now": null,
+          "max_mag_recent": 5.300000190734863,
+          "n_recent": 2
+        },
+        "prediction": {
+          "pres_max_hpa": null,
+          "gst_min_ms": null,
+          "expect_kp_ge_5": null,
+          "expect_event": true,
+          "mag_min": 4.5,
+          "min_count": 1,
+          "fsot_pressure": 6.0191
+        }
+      },
+      {
+        "id": "FCAST-EQ-20261103T0621-02",
+        "kind": "earthquake",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-10T06:21:24+00:00",
+        "location": {
+          "name": "193 km ENE of Nagqu, China",
+          "lat": 32.3266,
+          "lon": 93.7665,
+          "radius_km": 39.1
+        },
+        "class": "M_ge_threshold_in_window",
+        "valve_state": "loading_suction",
+        "kill_if": "No USGS M\u22654.5 inside 39 km of (32.327,93.766) between 2026-11-03 and 2026-11-10",
+        "measured_inputs": {
+          "pres_now_hpa": null,
+          "wind_10m_in_gust_slot_ms": null,
+          "kp_now": null,
+          "max_mag_recent": 4.699999809265137,
+          "n_recent": 2
+        },
+        "prediction": {
+          "pres_max_hpa": null,
+          "gst_min_ms": null,
+          "expect_kp_ge_5": null,
+          "expect_event": true,
+          "mag_min": 4.5,
+          "min_count": 1,
+          "fsot_pressure": 1.7966
+        }
+      },
+      {
+        "id": "FCAST-EQ-20261103T0621-03",
+        "kind": "earthquake",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-10T06:21:24+00:00",
+        "location": {
+          "name": "5 km NE of Delta, B.C., MX",
+          "lat": 32.4124,
+          "lon": -115.1651,
+          "radius_km": 39.1
+        },
+        "class": "M_ge_threshold_in_window",
+        "valve_state": "loading_suction",
+        "kill_if": "No USGS M\u22654.5 inside 39 km of (32.412,-115.165) between 2026-11-03 and 2026-11-10",
+        "measured_inputs": {
+          "pres_now_hpa": null,
+          "wind_10m_in_gust_slot_ms": null,
+          "kp_now": null,
+          "max_mag_recent": 3.456360101699829,
+          "n_recent": 4
+        },
+        "prediction": {
+          "pres_max_hpa": null,
+          "gst_min_ms": null,
+          "expect_kp_ge_5": null,
+          "expect_event": true,
+          "mag_min": 4.5,
+          "min_count": 1,
+          "fsot_pressure": 0.3196
+        }
+      },
+      {
+        "id": "FCAST-EQ-20261103T0621-04",
+        "kind": "earthquake",
+        "issued_at": "2026-11-03T06:21:24+00:00",
+        "valid_from": "2026-11-03T06:21:24+00:00",
+        "valid_to": "2026-11-10T06:21:24+00:00",
+        "location": {
+          "name": "8 km E of Lower Lake, CA",
+          "lat": 38.8788,
+          "lon": -122.622,
+          "radius_km": 39.1
+        },
+        "class": "M_ge_threshold_in_window",
+        "valve_state": "loading_suction",
+        "kill_if": "No USGS M\u22654.5 inside 39 km of (38.879,-122.622) between 2026-11-03 and 2026-11-10",
+        "measured_inputs": {
+          "pres_now_hpa": null,
+          "wind_10m_in_gust_slot_ms": null,
+          "kp_now": null,
+          "max_mag_recent": 2.7899999618530273,
+          "n_recent": 3
+        },
+        "prediction": {
+          "pres_max_hpa": null,
+          "gst_min_ms": null,
+          "expect_kp_ge_5": null,
+          "expect_event": true,
+          "mag_min": 4.5,
+          "min_count": 1,
+          "fsot_pressure": 0.1823
+        }
+      }
+    ]
+  },
+  "volcanic": [],
+  "pending": [
+    {
+      "hour": "2026-11-03T12",
+      "lat": -60.0,
+      "lon": -180.0,
+      "of": "wind",
+      "value": 19.81
+    },
+    {
+      "hour": "2026-11-03T15",
+      "lat": -59.958,
+      "lon": -90.042,
+      "of": "wave",
+      "value": 7.18
+    },
+    {
+      "hour": "2026-11-05T00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "of": "kp",
+      "value": 2.67
+    },
+    {
+      "hour": "2026-11-03T14",
+      "lat": -60.0,
+      "lon": -79.977,
+      "of": "wind",
+      "value": 18.79
+    },
+    {
+      "hour": "2026-11-03T14",
+      "lat": -59.958,
+      "lon": -90.042,
+      "of": "wave",
+      "value": 7.02
+    },
+    {
+      "hour": "2026-11-03T20",
+      "lat": -39.965,
+      "lon": 140.028,
+      "of": "rain",
+      "value": 11.4
+    },
+    {
+      "hour": "2026-11-05T06",
+      "lat": 0.0,
+      "lon": 0.0,
+      "of": "kp",
+      "value": 3.67
+    },
+    {
+      "hour": "2026-11-04T02",
+      "lat": -60.0,
+      "lon": -159.954,
+      "of": "wind",
+      "value": 19.03
+    }
+  ],
+  "pulled": {
+    "wind-grid": "2026-11-03  06:17:52 UTC",
+    "wind-hours": "2026-11-03  06:17:52 UTC",
+    "kp": "2026-11-03  06:17:53 UTC",
+    "quakes": "2026-11-03  06:17:51 UTC"
+  },
+  "sources": {
+    "wind-grid": "Open-Meteo",
+    "wind-hours": "Open-Meteo",
+    "kp": "NOAA SWPC planetary K index",
+    "quakes": "USGS"
+  }
+}

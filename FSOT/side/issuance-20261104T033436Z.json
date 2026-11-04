@@ -1,0 +1,917 @@
+{
+  "issued_at": "2026-11-04T03:34:36Z",
+  "pin_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "engine": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_earth_fluid_forecast.py",
+  "confirmed_held_out": 0,
+  "counts_when": "scored only against a measurement whose time is after issued_at",
+  "quake_catalog": {
+    "source": "USGS 2.5_week plus day-feed ids absent from that file",
+    "week_events": 348,
+    "day_events": 42,
+    "day_ids_added": 0,
+    "used": 348,
+    "week_file": "usgs-2.5-week.geojson",
+    "week_age_s": 362,
+    "week_fetched": false,
+    "week_error": null
+  },
+  "weather": [],
+  "solar": [],
+  "earthquakes": [
+    {
+      "id": "FCAST-EQ-20261104T0334-01",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "southeast of Easter Island",
+        "lat": -36.4058,
+        "lon": -98.0489,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 65.9647,
+        "n_recent": 1,
+        "max_mag_recent": 6.4,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (-36.406,-98.049) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": -36.4058,
+        "lon": -98.0489,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-02",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "43 km ESE of Port-Olry, Vanuatu",
+        "lat": -15.1891,
+        "lon": 167.4523,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 57.1603,
+        "n_recent": 1,
+        "max_mag_recent": 6.2,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (-15.189,167.452) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": -15.1891,
+        "lon": 167.45229999999998,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-03",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "165 km NW of Port-Olry, Vanuatu",
+        "lat": -14.1001,
+        "lon": 165.785,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "post_poof_aftershock",
+        "fsot_pressure": 51.7884,
+        "n_recent": 7,
+        "max_mag_recent": 6.0,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Recent M\u22655.5 was the POOF. Omori SUCTION can go quiet. Not a new mainshock."
+          },
+          {
+            "id": "omori_aftershock",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Aftershock in the scored cell. Quiet-hold kill is only another M\u22655."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Load dumped in a coupled tank at R\u2295\u00b7POOF. Cell kill_if unchanged."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (-14.100,165.785) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": -14.100050202265033,
+        "lon": 165.7850307468399,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-04",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "110 km ENE of Barcelona, Philippines",
+        "lat": 8.3877,
+        "lon": 127.425,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 34.9759,
+        "n_recent": 4,
+        "max_mag_recent": 5.8,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (8.388,127.425) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": 8.387684450139878,
+        "lon": 127.42501374263512,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-05",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "58 km SSE of Shima, Japan",
+        "lat": 33.822,
+        "lon": 136.9854,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "post_poof_aftershock",
+        "fsot_pressure": 33.5263,
+        "n_recent": 1,
+        "max_mag_recent": 6.0,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Recent M\u22655.5 was the POOF. Omori SUCTION can go quiet. Not a new mainshock."
+          },
+          {
+            "id": "omori_aftershock",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Aftershock in the scored cell. Quiet-hold kill is only another M\u22655."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Load dumped in a coupled tank at R\u2295\u00b7POOF. Cell kill_if unchanged."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (33.822,136.985) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": 33.822,
+        "lon": 136.9854,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-06",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "271 km WSW of Tual, Indonesia",
+        "lat": -6.3231,
+        "lon": 130.3957,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 22.141,
+        "n_recent": 1,
+        "max_mag_recent": 5.7,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (-6.323,130.396) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": -6.3231,
+        "lon": 130.3957,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-07",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "82 km NE of Kiunga, Papua New Guinea",
+        "lat": -5.6991,
+        "lon": 141.9018,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 20.393,
+        "n_recent": 1,
+        "max_mag_recent": 5.7,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (-5.699,141.902) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": -5.6991,
+        "lon": 141.9018,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    },
+    {
+      "id": "FCAST-EQ-20261104T0334-08",
+      "kind": "earthquake",
+      "issued_at": "2026-11-04T03:34:36+00:00",
+      "valid_from": "2026-11-04T03:34:36+00:00",
+      "valid_to": "2026-11-11T03:34:36+00:00",
+      "location": {
+        "name": "5 km ESE of Asahi, Japan",
+        "lat": 35.7015,
+        "lon": 140.6991,
+        "radius_km": 39.1
+      },
+      "predicted": {
+        "class": "M_ge_threshold_in_window",
+        "mag_min": 5.0,
+        "min_count": 0,
+        "expect_event": false,
+        "valve_state": "released",
+        "fsot_pressure": 19.1795,
+        "n_recent": 4,
+        "max_mag_recent": 5.5,
+        "refine_note": "Loading (no recent M\u22655.5) expects M\u22654.5. Post-POOF / released / steady: quiet hold; kill only if another M\u22655. A recent M\u22655.5 is the POOF, not a new loading promise.",
+        "S_seismology": 0.588125,
+        "poof": 0.1534822148944508,
+        "suction": 0.14703398542810284,
+        "omori_p": 1.0,
+        "omori_c_days": 0.6180339887498948,
+        "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/\u03c6)^1",
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "volcanic",
+          "weather",
+          "solar",
+          "tide",
+          "hydrology"
+        ],
+        "cycle_note": "Cell is R\u2295\u00b7POOF/25. If the cell is quiet, look for POOF in the planetary cycle (R\u2295\u00b7POOF) \u2014 arc/trench/solar tanks. Does not rewrite kill_if.",
+        "fold_score_d": 0.9997,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 39.1,
+        "orifice_valve_km": 977.8,
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.083151,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.427578,
+            "tanks": [
+              {
+                "kind": "solar",
+                "kappa": 0.07357155,
+                "weight": 0.215502
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.05433897,
+                "weight": 0.159167
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.05319815,
+                "weight": 0.155825
+              },
+              {
+                "kind": "volcanic",
+                "kappa": 0.05256568,
+                "weight": 0.153973
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.05213974,
+                "weight": 0.152725
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=1.00 (39.1 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "An USGS M\u22655.0 inside 39 km of (35.701,140.699) between 2026-11-04 and 2026-11-11",
+      "score_query": {
+        "lat": 35.701487059163,
+        "lon": 140.69907570249975,
+        "radius_km": 39.11340764370184,
+        "mag_min": 5.0,
+        "start": "2026-11-04",
+        "end": "2026-11-11"
+      },
+      "catalog": {
+        "source": "USGS 2.5_week plus day-feed ids absent from that file",
+        "week_events": 348,
+        "day_events": 42,
+        "day_ids_added": 0,
+        "used": 348,
+        "week_file": "usgs-2.5-week.geojson",
+        "week_age_s": 362,
+        "week_fetched": false,
+        "week_error": null
+      }
+    }
+  ],
+  "volcanic": [],
+  "horizon": {
+    "weather_hours": 24,
+    "earthquake_days": 7,
+    "kernel_km": 39.11340764370184,
+    "solar_hours": 72
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "issued_at": "2026-11-03T09:02:02Z",
+  "pin_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "engine": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_earth_fluid_forecast.py",
+  "confirmed_held_out": 0,
+  "counts_when": "scored only against a measurement whose time is after issued_at",
+  "weather": [],
+  "solar": [
+    {
+      "id": "FCAST-SOL-20261103T0902-01",
+      "kind": "solar",
+      "issued_at": "2026-11-03T09:02:02+00:00",
+      "valid_from": "2026-11-03T09:02:02+00:00",
+      "valid_to": "2026-11-06T09:02:02+00:00",
+      "location": {
+        "name": "Earth magnetosphere (planetary Kp)",
+        "lat": 0.0,
+        "lon": 0.0,
+        "radius_km": 6371.0
+      },
+      "predicted": {
+        "class": "quiet_sector",
+        "kp_threshold": 5.0,
+        "expect_kp_ge_5": false,
+        "kp_now": 0.67,
+        "valve_state": "steady",
+        "fold_score_d": 25.0,
+        "fold_valve_d": 25.0,
+        "orifice_score_km": 977.8,
+        "orifice_valve_km": 977.8,
+        "cycle_radius_km": 977.8,
+        "neighbor_kinds": [
+          "earthquake",
+          "volcanic",
+          "weather",
+          "tide",
+          "hydrology"
+        ],
+        "potentials": [
+          {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": 0.489271,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF."
+          },
+          {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": 0.135735,
+            "means": "Cell POOF after released/steady. That is the public kill."
+          },
+          {
+            "id": "transferred_poof",
+            "fold_d": 25.0,
+            "weight": 0.374994,
+            "tanks": [
+              {
+                "kind": "volcanic",
+                "kappa": 0.0749466,
+                "weight": 0.152003
+              },
+              {
+                "kind": "earthquake",
+                "kappa": 0.07357155,
+                "weight": 0.149214
+              },
+              {
+                "kind": "tide",
+                "kappa": 0.0723099,
+                "weight": 0.146655
+              },
+              {
+                "kind": "weather",
+                "kappa": 0.07114312,
+                "weight": 0.144289
+              },
+              {
+                "kind": "hydrology",
+                "kappa": 0.0700505,
+                "weight": 0.142073
+              }
+            ],
+            "means": "Coupled tank can still dump. Not this cell's expect_event."
+          }
+        ],
+        "triangulation_note": "Score object is fold d=25.00 (6371.0 km). Coupled tanks talk at d=25 (977.8 km). If those differ, the load can dump next door. kill_if stays the score object."
+      },
+      "kill_if": "NOAA SWPC planetary Kp does reach 5 or above in the next 72 hours",
+      "score_query": {
+        "expect_kp_ge_5": false
+      }
+    }
+  ],
+  "earthquakes": [],
+  "volcanic": [],
+  "horizon": {
+    "weather_hours": 24,
+    "earthquake_days": 7,
+    "kernel_km": 39.11340764370184,
+    "solar_hours": 72
+  }
+}

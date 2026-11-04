@@ -1,0 +1,21 @@
+[package]
+name = "fsot-global-monitor"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Interactive Earth for the FSOT global monitor"
+
+[dependencies]
+bytemuck = { version = "1.23", features = ["derive"] }
+egui = "0.37"
+egui-wgpu = "0.37"
+egui-winit = "0.37"
+env_logger = "0.11"
+glam = "0.30"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+log = "0.4"
+pollster = "0.4"
+serde_json = "1"
+ureq = "2.12"
+wgpu = "30"
+winit = "0.30.13"
